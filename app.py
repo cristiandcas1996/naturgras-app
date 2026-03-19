@@ -94,8 +94,8 @@ if st.checkbox("📜 Ver historial de producciones"):
         datos_historicos = conn.read()
         st.dataframe(datos_historicos.tail(10)) # Muestra las últimas 10 filas
     except:
-        st.write("Aún no hay datos en el historial.")
-        st.subheader("📲 Reporte para WhatsApp")
+        st.write("Aún no hay datos en el historial.")     
+st.subheader("📲 Reporte para WhatsApp")
 reporte = f"""
 *Naturgras - Reporte de Producción* 🐷
 📅 Fecha: {datetime.now().strftime('%d/%m/%Y')}
