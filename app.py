@@ -108,4 +108,4 @@ reporte = f"""
     💵 Costo unitario G: ${costo_final_grande:,.0f}
     💵 Costo unitario P: ${costo_final_pequeno:,.0f}
     """
-    st.code(reporte) # Esto les permite copiar el texto con un solo clic
+st.code(reporte) # Esto les permite copiar el texto con un solo clic
