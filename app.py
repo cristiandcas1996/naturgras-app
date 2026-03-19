@@ -97,15 +97,15 @@ if st.checkbox("📜 Ver historial de producciones"):
         st.write("Aún no hay datos en el historial.")     
 st.subheader("📲 Reporte para WhatsApp")
 reporte = f"""
-*Naturgras - Reporte de Producción* 🐷
-📅 Fecha: {datetime.now().strftime('%d/%m/%Y')}
----
-✅ Libras: {libras} lb
-✅ Frascos G: {n_grandes} | Frascos P: {n_pequenos}
-💰 Inversión: ${inversion_total:,.0f}
-📈 Rendimiento: {total_gramos/libras:.0f} g/lb
----
-💵 Costo unitario G: ${costo_final_grande:,.0f}
-💵 Costo unitario P: ${costo_final_pequeno:,.0f}
-"""
-st.code(reporte) # Esto les permite copiar el texto con un solo clic
+    *Naturgras - Reporte de Producción* 🐷
+    📅 Fecha: {datetime.now().strftime('%d/%m/%Y')}
+    ---
+    ✅ Libras: {libras} lb
+    ✅ Frascos G: {n_grandes} | Frascos P: {n_pequenos}
+    💰 Inversión: ${inversion_total:,.0f}
+    📈 Rendimiento: {total_gramos/libras:.0f} g/lb
+    ---
+    💵 Costo unitario G: ${costo_final_grande:,.0f}
+    💵 Costo unitario P: ${costo_final_pequeno:,.0f}
+    """
+    st.code(reporte) # Esto les permite copiar el texto con un solo clic
